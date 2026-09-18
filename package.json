@@ -1,0 +1,19 @@
+{
+  "name": "aura-hotel-suite",
+  "version": "1.0.0",
+  "description": "AURA Hotel Management Full-Stack Prototype",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
