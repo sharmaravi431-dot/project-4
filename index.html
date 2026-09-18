@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10111b">
+<title>AURA — Hotel Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <div class="mobile-overlay" id="overlay"></div>
+  <aside class="sidebar" aria-label="Main navigation">
+    <div class="brand"><span class="brand-mark">A</span>AURA</div>
+    <div class="brand-sub">HOSPITALITY, REIMAGINED</div>
+    <div class="nav-label">WORKSPACE</div>
+    <nav id="navigation"></nav>
+    <div class="sidebar-bottom">
+      <div class="flex"><span class="online"></span><span class="small"> workspace</span></div>
+      <p class="small" style="margin:10px 0 0">Thoughtfully designed for better stays.</p>
+    </div>
+  </aside>
+
+<main class="main">
+    <header class="topbar">
+      <div class="flex">
+        <button class="icon-btn mobile-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <div class="property-name"><span id="propertyName">The Grand Aura</span><small>Property management workspace</small></div>
+      </div>
+      <div class="top-actions">
+        <span class="demo-tag">Admin</span>
+        <div class="avatar">RS</div>
+        <div class="admin-text"><strong class="small">Ravi Sharma</strong><div class="small muted">Hotel manager · Demo</div></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="page-heading">
+        <div><h1 id="pageTitle">Overview</h1><p id="pageDescription"></p></div>
+        <button class="btn primary" id="newBooking">＋ New booking</button>
+      </div>
+      <div id="view"></div>
+      <footer>AURA Hospitality Suite · Data stays in this browser</footer>
+    </div>
+  </main>
+</div>
+
+<dialog id="modal" aria-labelledby="modalTitle">
+  <div class="dialog-head">
+    <h2 id="modalTitle">New reservation</h2>
+    <button class="icon-btn" id="closeModal" aria-label="Close dialog">✕</button>
+  </div>
+  <form id="modalForm"></form>
+</dialog>
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
